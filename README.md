@@ -18,6 +18,7 @@ Other Features
 
 📊 Project Architecture
 
+```mamaid
 graph TD;
   %% === FRONTEND (React) === %%
   A[Frontend (React)] -->|Home Page| B[List of Products 🛍️]
@@ -37,7 +38,7 @@ graph TD;
   M[Other Features] -->|Protected Routes| N[Restrict Access 🔒]
   M -->|Session Persistence| O[Keep Users Logged In 🔄]
   M -->|Basic UI Styling| P[CSS/Bootstrap 🎨]
-
+```
 🚀 Installation & Setup
 
 1. Clone the repository
@@ -83,44 +84,13 @@ sequenceDiagram
     participant Frontend
     participant Backend
     participant Database
-
+```mamaid
     User->>Frontend: Enter login details
     Frontend->>Backend: Send credentials via API
     Backend->>Database: Verify user in MongoDB
     Database->>Backend: Return user info & JWT
     Backend->>Frontend: Send JWT token
     Frontend->>User: Store JWT and log in
+```
 
 📜 How to Ensure GitHub Renders Mermaid Diagrams
-
-Option 1: Use GitHub's Native Mermaid Support (Recommended)
-
-Simply push this README.md file to your GitHub repo, and it will render the Mermaid diagrams automatically. GitHub now supports Mermaid natively! 🚀
-
-Option 2: Convert Mermaid to an Image (If Not Rendering Properly)
-
-1️⃣ Go to Mermaid Live Editor.2️⃣ Paste the Mermaid diagram code.3️⃣ Click Download as PNG.4️⃣ Add the image to your GitHub repo (e.g., docs/diagram.png).5️⃣ Reference it in README.md:
-
-![Project Architecture](docs/diagram.png)
-
-This ensures universal compatibility if Mermaid is not rendering correctly.
-
-🛠️ Tech Stack
-
-Frontend: React, React Router, Axios, Bootstrap
-
-Backend: Node.js, Express.js, MongoDB, JWT Authentication
-
-Database: MongoDB (Mongoose ODM)
-
-Other Tools: Git, Postman, Dotenv
-
-📜 License
-
-This project is open-source and available under the MIT License.
-
-📞 Contact
-
-For questions or contributions, contact [Your Name] at [your-email@example.com].
-
-Happy Coding! 🚀
