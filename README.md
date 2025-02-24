@@ -6,23 +6,25 @@ Mini-Shop is a full-stack e-commerce application built using React (Frontend), E
 
 📊 Architecture Diagram
 ```mermaid
-graph TD;
+flowchart TD;
 
-  A[Frontend (React)] -->|Home Page| B[List of Products];
-  A -->|Product Page| C[Product Details];
-  A -->|Cart Page| D[Shopping Cart];
-  A -->|Checkout Page| E[Order Confirmation];
-  A -->|Login/Register Page| F[User Authentication];
-  A -->|Navbar| G[Navigation Bar];
+  A["Frontend (React)"] -->|Home Page| B["List of Products"];
+  A -->|Product Page| C["Product Details"];
+  A -->|Cart Page| D["Shopping Cart"];
+  A -->|Checkout Page| E["Order Confirmation"];
+  A -->|Login/Register Page| F["User Authentication"];
+  A -->|Navbar| G["Navigation Bar"];
 
-  H[Backend (Express + MongoDB)] -->|User Authentication| I[JWT Login/Register];
-  H -->|Product Management| J[Store Product Details];
-  H -->|Cart Functionality| K[Manage User Carts];
-  H -->|Order Management| L[User Orders];
+  H["Backend (Express + MongoDB)"] -->|User Authentication| I["JWT Login/Register"];
+  H -->|Product Management| J["Store Product Details"];
+  H -->|Cart Functionality| K["Manage User Carts"];
+  H -->|Order Management| L["User Orders"];
 
-  M[Other Features] -->|Protected Routes| N[Restrict Access];
-  M -->|Session Persistence| O[Keep Users Logged In];
-  M -->|Basic UI Styling| P[CSS/Bootstrap];
+  M["Other Features"] -->|Protected Routes| N["Restrict Access"];
+  M -->|Session Persistence| O["Keep Users Logged In"];
+  M -->|Basic UI Styling| P["CSS/Bootstrap"];
+
+
 ```
 
 🚀 Features
