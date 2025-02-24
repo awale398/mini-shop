@@ -1,3 +1,7 @@
+🛒 Mini-Shop (MERN Stack)
+
+This is a MERN Stack E-commerce Project featuring a React frontend, Express.js backend, and MongoDB database. It includes authentication, product management, cart functionality, and order history.
+
 📌 Features
 
 Frontend (React)
