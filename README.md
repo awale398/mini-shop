@@ -110,7 +110,7 @@ This project is open-source and available under the MIT License.
 
 📞 Contact
 
-For questions or contributions, contact [Your Name] at [your-email@example.com].
+For questions or contributions, contact [Abdiawal] at [adenabdiawal@gmail.com].
 
 Happy Coding! 🚀
 
