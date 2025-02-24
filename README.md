@@ -31,25 +31,25 @@ flowchart TD;
 
 Frontend (React)
 
-✅ Home Page – Displays a list of products
-✅ Product Page – Shows details of a selected product
-✅ Cart Page – Users can add/remove items in their cart
-✅ Checkout Page – Simple order confirmation (without payments)
-✅ Login/Register Page – Users can sign up and log in
-✅ Navbar – Shows login/logout buttons and user status
+##### ✅ Home Page – Displays a list of products
+##### ✅ Product Page – Shows details of a selected product
+##### ✅ Cart Page – Users can add/remove items in their cart
+##### ✅ Checkout Page – Simple order confirmation (without payments)
+##### ✅ Login/Register Page – Users can sign up and log in
+##### ✅ Navbar – Shows login/logout buttons and user status
 
 Backend (Express + MongoDB)
 
-✅ User Authentication – Login/Register with JWT (JSON Web Token)
-✅ Product Management – Store product details (name, price, image, description)
-✅ Cart Functionality – Allow adding/removing items (stored per user)
-✅ Order Management – Store user orders (history of purchases)
+##### ✅ User Authentication – Login/Register with JWT (JSON Web Token)
+##### ✅ Product Management – Store product details (name, price, image, description)
+##### ✅ Cart Functionality – Allow adding/removing items (stored per user)
+##### ✅ Order Management – Store user orders (history of purchases)
 
 Other Features
 
-✅ Protected Routes – Users must be logged in to checkout
-✅ Session Persistence – Keep users logged in using JWT stored in localStorage
-✅ Basic UI Styling – Using regular CSS or Bootstrap
+##### ✅ Protected Routes – Users must be logged in to checkout
+##### ✅ Session Persistence – Keep users logged in using JWT stored in localStorage
+##### ✅ Basic UI Styling – Using regular CSS or Bootstrap
 
 🔑 Authentication Flow
 ```mermaid
