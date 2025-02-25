@@ -4,8 +4,12 @@
 h1, h2, h3, h4, h5, h6, p{
     font-family: "Poppins", serif;
 }
-li{
+li, label, input{
     font-family: "Poppins", serif;
+}
+::placeholder{
+    font-family: "Poppins", serif;
+    color: #b3b3b3;
 }
 button{
     font-family: "Poppins", serif;

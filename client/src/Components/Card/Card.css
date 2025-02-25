@@ -32,7 +32,7 @@
     background-color: #ee3106;
     transform: scale(1.05);
 }
-.special-offer-section-card:hover{
-    transform: scale(1.02);
-    transition: all 0.6s ease-in-out;
+.ratings{
+    display: inline-block;
+    margin-top: 8px;
 }

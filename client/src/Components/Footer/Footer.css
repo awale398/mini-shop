@@ -27,3 +27,9 @@
     transform: scale(1.03);
     
 }
+.copyright-section{
+    text-align: center;
+    padding: 18px 0;
+    color: rgb(224, 219, 219);
+    border-top: 1px solid rgb(168, 167, 167);
+}

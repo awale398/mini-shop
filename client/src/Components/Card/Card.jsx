@@ -1,6 +1,6 @@
 import React from 'react'
 import './Card.css'
-// import AboutImage from "../../assets/food_18.png"
+import rating_stars from "../../assets/rating_starts.png"
 
 const Card = (props) => {
   return (
@@ -13,7 +13,10 @@ const Card = (props) => {
           <div className="special-offer-section-text">
             <h2>{props.name}</h2>
             <p>{props.description}</p>
-            <p>{props.category}</p>
+            <p style = {{fontWeight:'bold'}}>{props.category}</p>
+            <div className="ratings">
+            <img src={rating_stars} alt="" />
+            </div>
             <h3>${props.price}</h3>
             <button>Add to Cart +</button>
           </div>

@@ -16,7 +16,7 @@
     color: #131313;
 }
 .hero-page p{
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 8px;
     font-weight: 500;
 }
@@ -76,4 +76,126 @@
     color: #333;
     margin-bottom: 20px;
   }
-  
+  .about-section-text p{
+    font-size: 16px;
+  }
+  /* ------------testimonial cards styling----------------- */
+
+.testimonial-section {
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.testimonial-section h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.testimonial-section h2 span {
+  color:  #FF4C24;
+}
+.testimonial-section-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.testimonial-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.testimonial-card p {
+  font-size: 16px;
+  color: #555;
+  font-style: italic;
+}
+.testimonial-card p span{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.testimonial-card-img {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.testimonial-card-img img {
+  border-radius: 50%;
+
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.testimonial-card h4 {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+  text-align: center;
+}
+/* --------------popular food section--------------- */
+.popular-food-section {
+  text-align: center;
+  margin: 50px 0;
+}
+.popular-food-section h1{
+  font-size: 32px;
+}
+.popular-food-section h1 span{
+  color: #FF4C24;
+}
+.popular-food-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.popular-food-card{
+  display: flex;
+  gap: 16px;
+  max-width: 600px;
+  border: 1px solid red;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  padding: 8px;
+  margin: 40px 0;
+}
+.popular-food-card img{
+  width: 50%;
+}
+.popular-food-card-text{
+  text-align: left;
+}
+.popular-food-card-text h2{
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+.popular-food-card-text p{
+  font-size: 16px;
+}
+.popular-food-card-text button{
+  background-color: #FF4C24;
+  width: 150px;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.6s ease-in-out;
+}
+.popular-food-card-text button:hover{
+  background-color: #ee3106;
+  transform: scale(1.05);
+}

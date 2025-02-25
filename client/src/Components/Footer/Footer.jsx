@@ -13,7 +13,7 @@ const Footer = () => {
         </div>
         <div className="footer-section">
           <h3>Contact Us</h3>
-          <p>Email: info@tomato.com</p>
+          <p>Email: <a href="mailto:info@tomato.com"> info@tomato.com</a></p>
           <p>Phone: +254 798 654 321</p>
         </div>
         <div className="footer-section social">
@@ -21,7 +21,10 @@ const Footer = () => {
           <img src={facebook_icon} alt="facebook" />
           <img src={twitter_icon} alt="twitter" />
         </div>
-        </div>      
+        </div> 
+        <div className="copyright-section">
+          <p>&copy;2025 Tomato | All Rights Reserved</p>
+          </div>     
     </div>
   )
 }
