@@ -8,6 +8,7 @@ import Contact from './pages/Contact/Contact'
 import Cart from './pages/Cart/Cart'
 import Signup from './pages/LoginSignup/Signup'
 import Login from './pages/LoginSignup/Login'
+import Footer from './Components/Footer/Footer'
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
       <Route path = '/Login' element = {<Login/>}/>
       <Route path = '/Signup' element= {<Signup />}/>
      </Routes>
+     <Footer />
      </BrowserRouter>
     </>
   )

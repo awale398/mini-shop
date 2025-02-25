@@ -4,7 +4,8 @@ import {Link} from 'react-router-dom'
 
 const Login = () => {
   return (
-    <div className='form-container'>
+   <div className="form-section">
+     <div className='form-container'>
         <h1>Login</h1>
         <form action="">
             <div className="form-group">
@@ -20,6 +21,7 @@ const Login = () => {
         <p>Don't have an account? <Link to = '/Signup'>SignUp</Link></p>
       
     </div>
+   </div>
   )
 }
 

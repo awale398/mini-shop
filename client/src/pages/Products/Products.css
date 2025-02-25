@@ -1,0 +1,22 @@
+.products-section{
+    text-align: center;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.products-section hr{
+    width: 200px;
+    height: 4px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FF4C24;
+}
+.menu-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}

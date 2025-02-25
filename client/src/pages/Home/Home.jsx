@@ -1,6 +1,8 @@
 import React from 'react'
 import './Home.css'
-import logout from "../../assets/logout_icon.png"
+import AboutImage from "../../assets/food_18.png"
+import {Link} from 'react-router-dom'
+import Card from '../../Components/Card/Card'
 
 const Home = () => {
   return (
@@ -9,12 +11,13 @@ const Home = () => {
       <h3>Delicious Meals Delivered Fast, Right to Your Doorstep</h3>
       <h1>Quick Bites, Anytime,<br /> Anywhere</h1>
       <p>Craving something delicious? Get your favorite fast food delivered in no time, <br />hot and fresh. Enjoy a variety of tasty options with the convenience of fast delivery, <br /> perfect for when hunger strikes!</p>
-      <button>Order Now</button>
+      <Link to= '/Products' ><button>Order Now</button></Link>
     </div>
-
+ 
+{/* -----------about section---------- */}
     <div className="about-section">
       <div className="about-section-image">
-        <img src={logout} alt="" />
+        <img src={AboutImage} alt="" />
       </div>
       <div className="about-section-text">
         <h2>About Us</h2>

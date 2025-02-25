@@ -44,21 +44,30 @@
 .about-section {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 60px 20px;
     background-color: #f9f9f9;
+    flex-wrap: wrap;
+  }
+  .about-section-image{
+    /* border: 1px solid red; */
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 12px;
   }
   
   .about-section-image img {
-    max-width: 500px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
   }
   
   .about-section-text {
     max-width: 600px;
     font-size: 18px;
     line-height: 1.7;
+    /* border: 1px solid red; */
   }
   
   .about-section-text h2 {
