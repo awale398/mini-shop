@@ -1,0 +1,147 @@
+Project Documentation: MERN Stack E-commerce with Admin Panel
+Project Overview
+This project is a MERN Stack (MongoDB, Express.js, React, Node.js) e-commerce application with an Admin Panel. It is a complete CRUD (Create, Read, Update, Delete) application that provides full functionality to manage products, orders, and users. This project uses Tailwind CSS for styling to make the UI responsive and modern. The application is designed to allow customers to browse products, add them to the cart, and checkout, while the admin can manage products, view orders, and manage users.
+
+Technologies Used
+Frontend: React.js, Tailwind CSS
+Backend: Node.js, Express.js
+Database: MongoDB
+Authentication: JWT (JSON Web Token)
+File Upload: Multer (for product image uploads)
+Features
+User Features:
+
+View and browse products
+Add products to the shopping cart
+Checkout and order products
+User authentication (login and registration)
+Responsive design
+Admin Features:
+
+Manage products (Create, Read, Update, Delete)
+View and manage customer orders
+User management
+View product and order statistics
+Project Setup and Installation
+Follow these steps to set up the project locally:
+
+1. Clone the Repository
+Clone the repository using Git:
+
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/mern-ecommerce.git
+2. Install Dependencies
+Navigate to the backend and frontend directories and install dependencies.
+Backend Setup:
+Navigate to the backend directory:
+
+bash
+Copy
+Edit
+cd mern-ecommerce/backend
+Install the necessary dependencies:
+
+bash
+Copy
+Edit
+npm install
+
+1. Frontend (React) Setup:
+You are running npm run dev in the frontend directory. This is usually the case if you are using a tool like Vite or Create React App to build your React frontend.
+
+Run the Frontend:
+Navigate to the frontend folder and make sure to install all dependencies:
+
+bash
+Copy
+Edit
+cd frontend
+npm install
+Run the development server:
+
+bash
+Copy
+Edit
+npm run dev
+This will run your React app, typically at http://localhost:3000.
+
+2. Backend (Node.js + Express) Setup:
+You are running node index.js for the backend. If you are using nodemon for automatic server restarts, you might want to adjust the script to run in dev mode as well.
+
+Install Dependencies:
+
+Navigate to the backend folder:
+
+bash
+Copy
+Edit
+cd backend
+npm install
+Run the Backend:
+
+If you are using nodemon, add the following to your package.json:
+
+json
+Copy
+Edit
+"scripts": {
+  "dev": "nodemon index.js"
+}
+Then run the following command:
+
+bash
+Copy
+Edit
+npm run dev
+This will start the backend server in development mode, and it will automatically restart the server if you make changes to any files.
+
+The backend should now be running at http://localhost:5000 or the port defined in your index.js.
+
+3. Admin Panel Setup (if separate):
+If the admin panel has its own codebase, you'll follow the same procedure as the frontend. Assuming it’s a separate folder:
+
+Navigate to the admin folder:
+
+bash
+Copy
+Edit
+cd admin
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Run the Admin Panel in Development Mode:
+
+bash
+Copy
+Edit
+npm run dev
+This will typically launch the admin panel on a specific port, like http://localhost:4000 or whatever your configuration is.
+
+4. Full Stack Workflow
+Now that all parts are running (frontend, backend, and admin panel), you have the following setup:
+
+Frontend: React (running on http://localhost:5000)
+Backend: Express (running on http://localhost:4000)
+Admin Panel: Another React app (running on http://localhost:4000 or your configured port)
+5. Handling API Requests (CORS)
+Since you have the frontend and backend running on different ports, you need to handle CORS (Cross-Origin Resource Sharing). Make sure you have this in your backend code to allow API requests from your frontend.
+
+In your backend index.js (Express server), you should have something like this:
+
+javascript
+Copy
+Edit
+const cors = require("cors");
+
+app.use(cors({
+  origin: "http://localhost:4000",  // or the frontend URL
+  methods: "GET,POST,PUT,DELETE",
+  allowedHeaders: "Content-Type, Authorization"
+}));
+This ensures that your backend can accept requests from your frontend running on a different port.
+
