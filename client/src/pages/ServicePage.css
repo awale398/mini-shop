@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  .service-page {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Section */
+  .service-header {
+    background-color: #FF4C24; /* Updated red background */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .service-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .service-header p {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  
+  /* Why Choose Us Section */
+  .why-choose-us {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .why-choose-us h2 {
+    font-size: 28px;
+    color: #FF4C24; /* Updated red header */
+  }
+  
+  .reasons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  .reason {
+    width: 250px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .reason h3 {
+    font-size: 22px;
+    color: #FF4C24; /* Updated red color */
+  }
+  
+  .reason p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Our Services Section */
+  .our-services {
+    padding: 40px 20px;
+    background-color: #FFEBE6; /* Light red background */
+  }
+  
+  .our-services h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #FF4C24; /* Updated red header */
+  }
+  
+  .service-item {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-item h3 {
+    font-size: 22px;
+    color: #FF4C24; /* Updated red color */
+  }
+  
+  .service-item p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* CTA Section */
+  .cta {
+    text-align: center;
+    margin-top: 40px;
+    padding: 40px 20px;
+    background-color: #FF4C24; /* Updated red background */
+    color: white;
+  }
+  
+  .cta h2 {
+    font-size: 30px;
+  }
+  
+  .cta p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: #ffffff;
+    color: #FF4C24; /* Updated button color */
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #FF4C24;
+    color: white;
+  }
+  
+  /* Footer Section */
+  .service-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #FF4C24; /* Updated red background */
+    color: white;
+    margin-top: 40px;
+  }
+  
+  .service-footer p {
+    font-size: 14px;
+    margin: 0;
+  }
+  

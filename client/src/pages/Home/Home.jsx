@@ -7,6 +7,7 @@ import client3 from "../../assets/client3.png"
 import food1 from "../../assets/food_26.png"
 import food2 from "../../assets/food_25.png"
 import {Link} from 'react-router-dom'
+import Popular from "../../Components/Popular"
 
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
       <h3>Delicious Meals Delivered Fast, Right to Your Doorstep</h3>
       <h1>Quick Bites, Anytime,<br /> Anywhere</h1>
       <p>Craving something delicious? Get your favorite fast food delivered in no time, <br />hot and fresh. Enjoy a variety of tasty options with the convenience of fast delivery, <br /> perfect for when hunger strikes!</p>
-      <Link to= '/Products' ><button>Order Now</button></Link>
+      <Link to= '/Display' ><button>Order Now</button></Link>
     </div>
  
 {/* -----------about section---------- */}
@@ -26,33 +27,19 @@ const Home = () => {
       </div>
       <div className="about-section-text">
         <h2>About Us</h2>
-        <p>Welcome to Tomato, your go-to for freshly baked cakes, pastries, and delicious fast food treats. We specialize in delivering high-quality, flavorful items straight to your door, whether you're celebrating or simply satisfying a craving. <br />At Tomato, we focus on convenience and quality. Our easy-to-use platform ensures your favorite sweet and savory treats arrive fast and fresh, made with the finest ingredients. <br />No matter where you are, Tomato is here to make sure you enjoy every bite. Let us take care of your hunger with delicious meals, delivered to you quickly and conveniently.</p>
-      </div>
+        <p style={{ color: 'black' }}>
+  Welcome to Tomato, your go-to for freshly baked cakes, pastries, and delicious fast food treats. We specialize in delivering high-quality, flavorful items straight to your door, whether you're celebrating or simply satisfying a craving. <br />
+  At Tomato, we focus on convenience and quality. Our easy-to-use platform ensures your favorite sweet and savory treats arrive fast and fresh, made with the finest ingredients. <br />
+  No matter where you are, Tomato is here to make sure you enjoy every bite. Let us take care of your hunger with delicious meals, delivered to you quickly and conveniently.
+</p>
+ </div>
     </div>
     {/* ----------------special offer---------------- */}
 
     {/* -------our special---------------------- */}
     <div className="popular-food-section">
       <h1>Popular <span>Foods</span></h1>
-      <div className="popular-food-container">
-        <div className="popular-food-card">
-          <img src={food1} alt="" />
-          <div className="popular-food-card-text">
-            <h2>Tomato Pasta</h2>
-            <p>Enjoy al dente pasta in a rich tomato sauce made with vine-ripened tomatoes, garlic, and herbs. Topped with Parmesan cheese and fresh basil, this dish is a flavorful classic.</p>
-            <Link to= '/Products' ><button>Order Now</button></Link>
-          </div>
-        </div>
-
-        <div className="popular-food-card">
-          <img src={food2} alt="" />
-          <div className="popular-food-card-text">
-            <h2>Cheese Pasta</h2>
-            <p>Indulge in creamy and delicious pasta coated in a velvety cheese sauce. Made with a blend of premium cheeses, this dish is rich, comforting, and sure to satisfy your cravings. Perfect for cheese lovers</p>
-            <Link to= '/Products' ><button>Order Now</button></Link>
-          </div>
-        </div>
-      </div>
+      <Popular />
 
     </div>
     {/* -----------testimonials------------------ */}

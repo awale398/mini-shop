@@ -93,3 +93,142 @@ li:hover::after{
     color: white;
     margin-left: -20px;
 }
+
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  /* Logo */
+  .nav-logo img {
+    height: 50px;
+  }
+  
+  /* Navigation Menu */
+  .nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-menu ul li {
+    list-style: none;
+  }
+  
+  .nav-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  .nav-menu ul li a:hover {
+    color: #007bff;
+  }
+  
+  /* Cart & Auth */
+  .nav-cart-login {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .cart-icon {
+    position: relative;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background: white;
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Login & Logout Buttons */
+  .login-btn, .logout-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .logout-btn {
+    background: rgb(247, 139, 67);
+  }
+  
+  .login-btn:hover, .logout-btn:hover {
+    opacity: 0.8;
+  }
+  
+  /* --- RESPONSIVENESS --- */
+  
+  /* Hide Menu on Mobile by Default */
+  .mobile-menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Mobile Styles */
+  @media screen and (max-width: 768px) {
+    .nav-menu {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      padding: 20px;
+      transition: 0.3s ease-in-out;
+    }
+  
+    /* Show menu when mobile icon is clicked */
+    .nav-menu.open {
+      display: flex;
+    }
+  
+    .nav-menu ul {
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+    }
+  
+    .nav-cart-login {
+      flex-direction: column;
+    }
+  
+    /* Show Hamburger Icon */
+    .mobile-menu-icon {
+      display: block;
+    }
+  }
+  
